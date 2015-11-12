@@ -60,8 +60,13 @@
             if (window.existingCall) {
                 window.existingCall.close();
             }
+            //
+            var peer = getPeer(call.peer);
+            peer.incoming = call;
+            peer.incoming.on('stream', function(stream) {
+            //
             // Wait for stream on the call, then set peer video display
-            call.incoming.on('stream', function(stream){
+            //call.incoming.on('stream', function(stream){
                 $('#their-video').prop('src', URL.createObjectURL(stream));
             });
             // UI stuff
