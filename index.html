@@ -76,6 +76,11 @@
             $('#step1, #step2').hide();
             $('#step3').show();
         }
+
+        // Helper functions
+        function getPeer(peerId) {
+            return peers[peerId] || (peers[peerId] = {id: peerId});
+        }
     </script>
 
 
