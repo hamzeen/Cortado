@@ -2,13 +2,13 @@
 <head>
     <title>PeerJS - Video chat example</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <script type="text/javascript" src="peer.js"></script>
     <script>
         // Compatibility shim
         navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
         // PeerJS object
-        var peer = new Peer({ key: 'v8sv3uq9s9oirudi', debug: 3});
+        var peer = new Peer({　host:'peerjs-server.herokuapp.com', secure:true, port:443, key: 'peerjs', debug: 3})
         peer.on('open', function(){
             $('#my-id').text(peer.id);
         });
