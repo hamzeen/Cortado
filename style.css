@@ -10,6 +10,9 @@ h2 {
     -webkit-text-shadow: 1px 1px 1px #000;
     -moz-text-shadow: 1px 1px 1px #000;
 }
+#callto-id {
+    padding: 15px;
+}
 .pure-button-success,
 .pure-button-error,
 .pure-button-warning,
