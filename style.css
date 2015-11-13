@@ -11,7 +11,7 @@ h2 {
     -moz-text-shadow: 1px 1px 1px #000;
 }
 input, #callto-id {
-    padding: 12px;
+    padding: 10px;
     font-size:20px;
 }
 .pure-button-success,
