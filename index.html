@@ -1,6 +1,7 @@
 <html>
 <head>
-    <title>PeerJS - Video chat example</title>
+    <meta charset="utf-8">
+    <title>Cortado Video Chat on the Browser</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <script type="text/javascript" src="peer.js"></script>
@@ -88,11 +89,13 @@
 
     <!-- Steps -->
     <div class="pure-u-1-3">
-        <h2>PeerJS Video Chat</h2>
+        <h2>Cortado - video chat for Everyone!</h2>
+        <p>Keep coming here for more awesomeness. Currently, it is only a preview version.</p>
 
         <!-- Get local audio/video stream -->
         <div id="step1">
-            <p>Please click `allow` on the top of the screen so we can access your webcam and microphone for calls.</p>
+            <p>For video calls, please select `Allow` when you're prompted. 
+                Copyright © 2015 - 2020 Hamzeen. H. All rights reserved.</p>
             <div id="step1-error">
                 <p>Failed to access the webcam and microphone. Make sure to run this demo on an http server and click allow when asked for permission by the browser.</p>
                 <a href="#" class="pure-button pure-button-error" id="step1-retry">Try again</a>
@@ -101,7 +104,7 @@
 
         <!-- Make calls to others -->
         <div id="step2">
-            <p>Your id: <span id="my-id">...</span></p>
+            <p>Your id: <span style="font-size: 24" id="my-id">...</span></p>
             <p>Share this id with others so they can call you.</p>
             <h3>Make a call</h3>
             <div class="pure-form">
