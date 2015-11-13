@@ -12,6 +12,7 @@ h2 {
 }
 input, #callto-id {
     padding: 15px;
+    font-size:20px;
 }
 .pure-button-success,
 .pure-button-error,
